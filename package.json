@@ -12,9 +12,9 @@
     "l": "npm run lint",
     "lint": "standard --verbose | snazzy",
     "sb": "npm run seatbelt",
-    "seatbelt": "npm run l && npm run t && npm run t:a",
-    "precommit": "npm run l",
-    "prepush": "npm run sb"
+    "seatbelt": "npm run lint && npm run test && npm run test:acceptance",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint && npm run test"
   },
   "standard": {
     "globals": [
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bootleg-Cashew-Butter/anime-gifs-to-medium.git"
+    "url": "git+https://github.com/Bootleg-Cashew-Butter/chatter-chain-fe.git"
   },
   "author": "Arjun Sarode <sarodearjun57@gmail.com> (http://arjunsarode.com/)",
   "license": "MIT",
