@@ -4,7 +4,6 @@ import styles from './App.styl'
 export default class App extends Component {
   render () {
     return <div className={styles.element}>
-      Teehee
       {this.props.children}
     </div>
   }
